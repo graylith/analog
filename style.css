@@ -1,0 +1,143 @@
+body{
+	min-height:100vh;
+	min-width:100vw;
+	background-color: #2948ff;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	overflow: hidden;
+}
+
+.clock{
+	width:300px;
+	height:300px;
+	background-color: #000;
+	border-radius: 50%;
+	position:relative;
+	border: 8px solid white;
+}
+
+.clock::before{
+	content:'';
+	width:15px;
+	height:15px;
+	background-color:#fff;
+	position: absolute;
+	border-radius:50%;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+.hand{
+	position:absolute;
+	background-color:white;
+	left: 50%;
+	bottom: 50%;
+	transform: translateX(-50%) rotate(90deg);
+	transform-origin: bottom;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	
+}
+.hour{
+	width:8px;
+	height:30%;
+}
+.minutes{
+	width:6px;
+	height:40%;
+}
+.seconds{
+	width:3px;
+	height:38%;
+}
+
+.numbers{
+	color:white;
+	font-size: 25px;
+}
+
+.twelve{
+	top:7%;
+	left:50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
+
+.six{
+	top:94%;
+	left:50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
+
+.three{
+	top:50%;
+	left:96%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
+
+.nine{
+	top:50%;
+	left:4%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
+
+.one{
+	top:14%;
+	left:72%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
+
+.eleven{
+	top:14%;
+	left:28%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
+
+.five{
+	top:86%;
+	left:72%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
+
+.two{
+	top:30%;
+	left:90%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
+
+.ten{
+	top:30%;
+	left:10%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
+
+.four{
+	top:70%;
+	left:90%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
+
+.eight{
+	top:70%;
+	left:10%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
+
+.seven{
+	top:86%;
+	left:28%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
